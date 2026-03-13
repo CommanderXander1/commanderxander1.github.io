@@ -1,16 +1,90 @@
-body {
-  background-color: black;
-  background-image: url("assets/bg.webp");
-  background-repeat: repeat;
-  background-size: 50%;
-  background-attachment: fixed;
-  color:antiquewhite;
-  font-family: 'minecraft';
+@import url('https://fonts.cdnfonts.com/css/pixelcraft-2');
+@import "tailwindcss";
+
+@theme {
+    --font-sans: "system-ui", ui-sans-serif, system-ui;
 }
 
-@font-face {
-      font-family: 'minecraft';
-      src: url('./assets/minecraft.otf') format('opentype');
-      font-weight: normal;
-      font-style: normal;
+body {
+    font-family: 'Minecraft', sans-serif;
+}
+
+#background {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+@keyframes pop {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+.pop {
+    animation: pop 2s infinite ease-in-out;
+}
+
+.mc-button-bg {
+    background-image: url("./assets/button.png");
+    opacity: 0.95;
+}
+
+.mc-button-bg:hover {
+    background-image: url("./assets/button_highlighted.png");
+}
+
+.sharp-image {
+    image-rendering: pixelated;
+}
+
+.mc-small-button-bg {
+    background-image: url("./assets/small_button.png");
+    opacity: 0.95;
+}
+
+.mc-small-button-bg:hover {
+    background-image: url("./assets/small_button_highlighted.png");
+}
+
+.mc-text-field {
+    background-image: url("./assets/text_field.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.mc-text-field:hover {
+    background-image: url("./assets/text_field_highlighted.png")
+}
+
+.mc-bg-img {
+    background-image: url("./assets/unpacked.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    object-fit: cover;
+    opacity: 100%;
+}
+
+.dirt-bg {
+    background-image: url("./assets/dirt.webp");
+    background-color: rgba(0, 0, 0, 0.3);
+    background-blend-mode: darken;
+}
+
+.endstone-bg {
+    background-image: url("./assets/endstone.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    object-fit: cover;
+    background-color: rgba(0, 0, 0, 0.3);
+    background-blend-mode: darken;
 }
