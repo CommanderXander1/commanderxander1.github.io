@@ -1,8 +1,16 @@
 @import url('https://fonts.cdnfonts.com/css/pixelcraft-2');
 @import "tailwindcss";
 
+@font-face {
+    font-family: "Minecraft";
+    src: url('./assets/minecraft.otf') format("opentype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 @theme {
-    --font-sans: "system-ui", ui-sans-serif, system-ui;
+    --font-sans: "Minecraft", ui-sans-serif, system-ui;
 }
 
 body {

@@ -6,8 +6,12 @@ const Home = () => {
     return (
         <>
             <Background/>
-            <Title/>
-            <Buttons/>
+            <div className="flex flex-col items-center justify-center">
+                <div className="origin-top mx-auto md:scale-80 sm:scale-70 scale-90">
+                    <Title/>
+                    <Buttons/>
+                </div>
+            </div>
         </>
     )
 }

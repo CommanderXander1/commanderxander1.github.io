@@ -5,11 +5,14 @@ const ExpandCard = ({ c }) => {
 
   return (
     <div
-      onClick={() => setOpen(!open)}
+      onClick={() => {
+        if(c.content != null)
+        setOpen(!open)
+        }}
       className="bg-black/40 shadow-xl border-3 border-transparent hover:border-white text-white overflow-hidden cursor-pointer transition-all duration-300"
     >
       <div className="flex items-center p-2">
-        <img className="p-1" src={c.img} width={80} height={80} />
+        <img className="p-1 w-[80px] h-[80px] flex-none" src={c.image} width={80} height={80} />
         <div className="flex flex-col">
           <p className="pl-4 text-3xl text-shadow-lg">{c.title}</p>
           <p className="pl-4 text-xl text-shadow-lg">{c.subtitle}</p>
@@ -20,7 +23,7 @@ const ExpandCard = ({ c }) => {
             open ? "rotate-180" : ""
           }`}
         >
-          ⌄
+          {c.content == null ? "" : "⌄"}
         </span>
       </div>
 

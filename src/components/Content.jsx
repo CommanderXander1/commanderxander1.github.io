@@ -12,8 +12,10 @@ const Content = ({ visibleContent }) => {
     
 
     return (
-        <div className="overflow-y-auto w-1/3 h-2/3 grid grid-cols-1 auto-rows-min place-self-center absolute top-40 gap-3">
-            { content }
+        <div className="min-h-1/2 flex justify-center pt-2 pb-2 px-4">
+            <div className="overflow-y-auto w-full max-w-xl grid grid-cols-1 auto-rows-min gap-3 max-h-[70vh]">
+                {content}
+            </div>
         </div>
     )
 }

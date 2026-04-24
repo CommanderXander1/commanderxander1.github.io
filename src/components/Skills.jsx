@@ -1,87 +1,42 @@
 import Page from "./Page"
+import Skill from "./Skill"
+import skillsets from "../assets/icons/skillsets.png"
+import languages from "../assets/icons/languages.png"
+import frameworks from "../assets/icons/frameworks.png"
 
 const content = [
         {
             title: "Skillsets", 
+            image: skillsets,
             subtitle: "General programming skillsets", 
             content: 
                 <>
-                    <h1 className="text-2xl">Web development</h1>
-                    <ol className="list-disc list-inside">
-                        <li>Backend</li>
-                        <li>Frontend</li>
-                        <li>Databases</li>
-                    </ol>
-
-                    <h1 className="text-2xl">Machine Learning</h1>
-                    <ol className="list-disc list-inside">
-                        <li>Neural networks</li>
-                        <li>Regression</li>
-                    </ol>
-
-                    <h1 className="text-2xl">Scripting and app development</h1>
-                    <ol className="list-disc list-inside">
-                        <li>Data management</li>
-                        <li>Web scraping</li>
-                        <li>Automation</li>
-                        <li>GUIs and user experience</li>
-                    </ol>
-
-                    <h1 className="text-2xl">Integrated systems</h1>
-                    <ol className="list-disc list-inside">
-                        <li>FRC</li>
-                        <li>Arduino</li>
-                        <li>Raspberry PI</li>
-                    </ol>
+                    <Skill content={{title: "Web development", list: ["Backend", "Frontend", "Databases"]}}/>
+                    <Skill content={{title: "Machine learning", list: ["Neural networks", "Regression"]}}/>
+                    <Skill content={{title: "Scripting and app development", list: ["Data management", "Web scraping", "Automation", "GUIs and user experience"]}}/>
+                    <Skill content={{title: "Integrated systems", list: ["Arduino", "FRC", "Raspberry PI"]}}/>
                 </>
         },
         { 
             title: "Languages", 
+            image: languages,
             subtitle: "Programming languages I am experienced in", 
             content: 
                 <>
-                    <h1 className="text-2xl">Fluent</h1>
-                    <ol className="list-disc list-inside">
-                        <li>Python</li>
-                        <li>Java</li>
-                        <li>Javascript</li>
-                        <li>HTML/CSS</li>
-                        <li>SQL</li>
-                    </ol>
-                    <h1 className="text-2xl">Learning</h1>
-                    <ol className="list-disc list-inside">
-                        <li>C</li>
-                        <li>C++</li>
-                    </ol>
+                    <Skill content={{title: "Fluent", list: ["Python", "Java", "Javascript", "HTML/CSS", "SQL"]}}/>
+                    <Skill content={{title: "Learning", list: ["C", "C++"]}}/>
                 </>
         },
         { 
             title: "Frameworks",
+            image: frameworks,
             subtitle: "Programming frameworks I am experienced in", 
             content:
             <>
-                <h1 className="text-2xl">Python</h1>
-                <ol className="list-disc list-inside">
-                    <li>Flask (websites)</li>
-                    <li>Tensorflow/Keras (machine learning)</li>
-                    <li>Scikit-learn (machine learning)</li>
-                </ol>
-                
-                <h1 className="text-2xl">Javascript</h1>
-                <ol className="list-disc list-inside">
-                    <li>React (websites)</li>
-                    <li>React Native (native mobile OS development)</li>
-                </ol>
-
-                <h1 className="text-2xl">Java</h1>
-                <ol className="list-disc list-inside">
-                    <li>WPILib for FRC/FTC</li>
-                </ol>
-
-                <h1 className="text-2xl">C++</h1>
-                <ol className="list-disc list-inside">
-                    <li>Arduino</li>
-                </ol>
+                <Skill content={{title: "Python", list: ["Flask", "Tensorflow", "Keras", "Scikit-learn"]}}/>
+                <Skill content={{title: "Javascript", list: ["React", "React Native"]}}/>
+                <Skill content={{title: "Java", list: ["WPILib", "MCP"]}}/>
+                <Skill content={{title: "C++", list: ["Arduino", "JNI"]}}/>
             </>
         },
 ]
