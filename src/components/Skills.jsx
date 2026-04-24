@@ -43,7 +43,7 @@ const content = [
 
 const Skills = () => {
     return (
-        <Page content={content}/>
+        <Page content={content} name={"skills"}/>
     )
 }
 

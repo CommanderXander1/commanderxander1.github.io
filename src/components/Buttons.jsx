@@ -11,7 +11,7 @@ const Buttons = () => {
             </div>
             <div className='grid grid-cols-2 relative mt-23 place-self-center'>
                     <SmallButton text="Contact" redirect="contact"/>
-                    <SmallButton text="Achievements" redirect="achievements"/>
+                    <SmallButton text="More" redirect="more"/>
             </div>
         </div>
     )

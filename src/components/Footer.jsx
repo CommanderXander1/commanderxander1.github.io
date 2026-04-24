@@ -10,7 +10,7 @@ const Footer = () => {
                 <SmallFooterButton text="Skills" redirect="/skills"/>
                 <SmallFooterButton text="Projects" redirect="/projects"/>
                 <SmallFooterButton text="Contact" redirect="/contact"/>
-                <SmallFooterButton text="Achievements" redirect="/achievements"/>
+                <SmallFooterButton text="More" redirect="/more"/>
             </div>
         </div>
     )

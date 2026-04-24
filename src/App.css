@@ -13,6 +13,10 @@
     --font-sans: "Minecraft", ui-sans-serif, system-ui;
 }
 
+@utility no-scrollbar {
+  @apply [scrollbar-width:none] [&::-webkit-scrollbar]:hidden;
+}
+
 body {
     font-family: 'Minecraft', sans-serif;
 }

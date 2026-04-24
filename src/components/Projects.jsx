@@ -49,7 +49,7 @@ const content = [
 
 const Projects = () => {
     return (
-        <Page content={content}/>
+        <Page content={content} name={"projects"}/>
     )
 }
 

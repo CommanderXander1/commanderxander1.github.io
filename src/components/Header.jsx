@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-const Header = ({ content, setVisibleContent}) => {
+const Header = ({ content, setVisibleContent, name }) => {
     const [search, updateSearch] = useState("")
 
     return (
@@ -13,7 +13,7 @@ const Header = ({ content, setVisibleContent}) => {
                     updateSearch(e.target.value)
                     setVisibleContent(content.filter(c => {return c.title.toLowerCase().includes(e.target.value.toLowerCase())}))
                 }}
-                placeholder="Search skills">
+                placeholder={ "Search " + name }>
             </input>
         </div>
     )
